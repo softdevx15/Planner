@@ -151,7 +151,7 @@ jobs:
 
       - name: Upload bundle report
         id: upload_bundle_report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: bundle-report
           path: docs/bundle-report
@@ -279,7 +279,7 @@ jobs:
       - name: Upload Playwright report
         if: always()
         id: upload_playwright_report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: playwright-report-${{ matrix.suite }}
           path: playwright-report-${{ matrix.suite }}
